@@ -20,35 +20,41 @@ import {MatCardModule} from "@angular/material/card";
 import {MatTableModule} from "@angular/material/table";
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from "@angular/material/input";
+import { SensorUploadComponent } from './components/sensor-upload/sensor-upload.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     SensorListComponent,
-    SensorGraphComponent
+    SensorGraphComponent,
+    SensorUploadComponent
   ],
-  imports: [
-    BrowserModule,
-    MatSidenavModule,
-    MatListModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    MatNativeDateModule,
-    ReactiveFormsModule,
-    AppRoutingModule,
-    RouterLink,
-    RouterOutlet,
-    MatCardModule,
-    MatTableModule,
-    MatSelectModule,
-    MatInputModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        MatSidenavModule,
+        MatListModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        MatNativeDateModule,
+        ReactiveFormsModule,
+        AppRoutingModule,
+        RouterLink,
+        RouterOutlet,
+        MatCardModule,
+        MatTableModule,
+        MatSelectModule,
+        MatInputModule,
+        MatGridListModule,
+        MatSnackBarModule,
+    ],
+  providers: [MatSnackBar],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

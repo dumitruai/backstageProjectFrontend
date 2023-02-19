@@ -1,0 +1,11 @@
+<mat-grid-list cols="1" rowHeight="50%">
+  <mat-grid-tile>
+    <mat-form-field appearance="fill" style="width: 100%; height: 100%">
+      <textarea matInput rows="20" style="width: 100%; height: 400px;" [(ngModel)]="messageData"
+                placeholder="Insert your json here"></textarea>
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="publishMessage(messageData)">Submit</button>
+  </mat-grid-tile>
+</mat-grid-list>
