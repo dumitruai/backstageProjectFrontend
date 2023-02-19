@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Quicksand-Light.ttf'); /* IE9 Compat Modes */
+  src: local('Quicksand-Light'), local('Quicksand-Light'),
+  url('../assets/fonts/Quicksand-Light.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/Quicksand-Light.ttf') format('woff'), /* Modern Browsers */
+  url('../assets/fonts/Quicksand-Light.ttf') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/Quicksand-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/Quicksand-Light.ttf') format('svg'); /* Legacy iOS */
+}
+
+.app {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
